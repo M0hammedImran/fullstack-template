@@ -1,0 +1,26 @@
+{
+	"name": "app",
+	"version": "1.0.0",
+	"description": "",
+	"scripts": {
+		"prepare": "husky install"
+	},
+	"keywords": [],
+	"author": {
+		"email": "mohammedimran86992@gmail.com",
+		"name": "Mohammed Imran",
+		"url": "https://mohammedimran.com"
+	},
+	"devDependencies": {
+		"husky": "^8.0.3",
+		"lint-staged": "^15.0.2",
+		"nx": "^17.0.2"
+	},
+	"lint-staged": {
+		"*.ts": [
+			"npx nx format",
+			"npx nx lint"
+		]
+	}
+}
+

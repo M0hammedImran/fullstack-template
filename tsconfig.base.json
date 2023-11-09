@@ -1,0 +1,35 @@
+{
+	"$schema": "https://json.schemastore.org/tsconfig",
+	"display": "App Base",
+	"compilerOptions": {
+		"declaration": true,
+		"removeComments": true,
+		"emitDecoratorMetadata": true,
+		"experimentalDecorators": true,
+		"target": "ES2020",
+		"useDefineForClassFields": true,
+		"module": "ESNext",
+		"skipLibCheck": true,
+
+		/* Bundler mode */
+		"allowImportingTsExtensions": true,
+		"resolveJsonModule": true,
+		"isolatedModules": true,
+		"jsx": "react-jsx",
+
+		"sourceMap": true,
+		"verbatimModuleSyntax": true,
+
+		/* Linting */
+		"strict": true,
+		"noUnusedLocals": true,
+		"noUnusedParameters": true,
+		"noFallthroughCasesInSwitch": true,
+		"incremental": true,
+		"strictNullChecks": true,
+		"noImplicitAny": true,
+		"forceConsistentCasingInFileNames": true
+	},
+	"references": [{ "path": "./apps/client" }, { "path": "./apps/backend" }, { "path": "./packages/backend" }]
+}
+

@@ -1,0 +1,14 @@
+{
+	"$schema": "https://json.schemastore.org/tsconfig",
+	"extends": "../../tsconfig.base.json",
+	"compilerOptions": {
+		"lib": ["ES2020", "DOM", "DOM.Iterable"],
+		"allowImportingTsExtensions": false,
+		"outDir": "./dist",
+		"baseUrl": "./",
+		"moduleResolution": "bundler"
+	},
+	"include": ["src"],
+	"references": [{ "path": "./tsconfig.node.json" }]
+}
+

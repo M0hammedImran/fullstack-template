@@ -1,0 +1,25 @@
+{
+    "$schema": "https://json.schemastore.org/tsconfig",
+    "extends": "../../tsconfig.base.json",
+    "compilerOptions": {
+        "module": "commonjs",
+        "allowSyntheticDefaultImports": true,
+        "target": "ES2021",
+        "sourceMap": true,
+        "outDir": "./dist",
+        "baseUrl": "./",
+        "noImplicitAny": true,
+        "strictPropertyInitialization": false,
+        "forceConsistentCasingInFileNames": true,
+        "resolveJsonModule": true,
+        "allowImportingTsExtensions": false,
+        "noLib": false,
+        "esModuleInterop": true,
+        "verbatimModuleSyntax": false,
+        "paths": {
+            "@/*": ["./src/*"]
+        }
+    },
+    "exclude": ["node_modules", "dist", ".eslintrc.js"],
+    "include": ["src/**/*", "src/**/*.ts", "test/**/*.ts", "src/**/*.d.ts", "*.ts"]
+}
